@@ -7,6 +7,7 @@ fi
 
 # Dummy plug output name
 DUMMY="HDMI-A-1"
+SCRIPT_DIR=/home/atreb/.scripts
 
 unset restore_e_params
 unset restore_d_params
@@ -31,7 +32,7 @@ do
   fi
 done
 
-cat > $(pwd)/kscreen-restore.sh <<- EOM
+cat > $SCRIPT_DIR/kscreen-restore.sh <<- EOM
 #!/bin/sh
 /usr/bin/kscreen-doctor $restore_e_params $restore_d_params
 EOM
