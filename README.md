@@ -12,7 +12,11 @@ kscreen-startup.sh 1920 1080 60
 It can be paired with Sunshine Do and Undo Commands and dynamically take client requested resolution:
 
 Do Command
-`sh -c "zsh /path/to/script/kscreen-startup.sh $SUNSHINE_CLIENT_WIDTH $SUNSHINE_CLIENT_HEIGHT $SUNSHINE_CLIENT_FPS"`
+```
+sh -c "zsh /path/to/script/kscreen-startup.sh $SUNSHINE_CLIENT_WIDTH $SUNSHINE_CLIENT_HEIGHT $SUNSHINE_CLIENT_FPS"
+```
 
 Undo Command (this will be generated on kscreen-startup.sh execution)
-`sh -c "zsh /path/to/script/kscreen-restore.sh"`
+```
+sh -c "zsh /path/to/script/kscreen-restore.sh"
+```
